@@ -20,6 +20,6 @@ try:
     print("mess: ", data.decode())
   else:
     print("error")
-except socket.timeout():
+except:
   print("no response")
 

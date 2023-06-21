@@ -10,6 +10,7 @@ while True:
   mess, add = sock.recvfrom(4096)
   print(add)
   mess = mess.decode()
+  # print(mess)
   lenMess = str(len(mess))
   if random.random() >= 0.4:
     sock.sendto(lenMess.encode(), add)
